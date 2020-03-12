@@ -24,7 +24,7 @@ const createPaymentIntent = options => {
     });
 };
 
-const getProductDetails = options => {
+const getProductDetails = () => {
   return window
     .fetch(`/product-details`, {
       method: "GET",
@@ -49,7 +49,7 @@ const getProductDetails = options => {
     });
 };
 
-const getPublicStripeKey = options => {
+const getPublicStripeKey = () => {
   return window
     .fetch(`/public-key`, {
       method: "GET",
